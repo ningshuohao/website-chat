@@ -7,20 +7,29 @@
     </head>
     <body onload="find()">
         <h3 class="bt">网站聊天</h3>
+        <script>
+            var temp = 0
+            var num = localStorage.getItem("num");
+            if (num===null) {
+                localStorage.setItem("num",0)
+            };
+            function find(){
+                while (temp<num) {
+                var temp2 = temp + 1
+                document.write(localStorage.getItem(temp2))
+                var temp = temp2
+                };
+            };
+            </script>
         <form>要说的话：<input type="text" id="text"></form>
         <table><button type="button" onclick="save()"></button></table>
     </body>
 </html>
 <script>
-    var num = localStorage.getItem("num")
-    function find(){
-
-        localStorage.getItem("text")
-    };
     function save(){
         var text = document.getElementById("text").value
         if (text!==null) {
-                localStorage.setItem("text",text)
+                localStorage.setItem(num,text)
         } else {
             window.alert("没有内容")
         }
