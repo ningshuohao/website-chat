@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--©宁烁皓所有-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>&gt;-网络聊天室-&it;</title>
+    </head>
+    <body onload="find()">
+        <h3 class="bt">网站聊天</h3>
+        <form>要说的话：<input type="text" id="text"></form>
+        <table><button type="button" onclick="save()"></button></table>
+    </body>
+</html>
+<script>
+    function find(){
+
+    };
+    function save(){
+        var text = document.getElementById("text").value
+        if (text!==null) {
+                localStorage.setItem("text",text)
+        } else {
+            window.alert("没有内容")
+        }
+    };
+</script>
+<style>
+    .bt{
+        color:rgba(0,0,0,1)
+    }
+</style>
