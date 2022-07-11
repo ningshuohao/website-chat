@@ -30,4 +30,4 @@ ip等资源请自行获取
 
 ##测试
 
-https://ningshuohao.github.io/website-chat/
+https://ningshuohao.github.io/website-chat/本体/index.html
