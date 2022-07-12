@@ -18,7 +18,8 @@
     function find(){
         while (temp<num) {
             var temp2 = temp + 1;
-            document.write(localStorage.getItem(temp2));
+            var temp3 = localStorage.getItem(temp2)
+            document.write(temp3);
             var temp = temp2;
         };
     };
