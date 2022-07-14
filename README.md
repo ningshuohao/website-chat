@@ -26,4 +26,4 @@
 
 ## 测试
 
-[https://ningshuohao.github.io/website-chat/index.html]
+[https://ningshuohao.github.io/website-chat/demo.html]
