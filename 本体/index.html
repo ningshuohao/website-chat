@@ -27,7 +27,10 @@
     function save(){
         var text = document.getElementById("text").value
         if (text!==null) {
-                localStorage.setItem(num,text)
+            var temp4 = num +1
+            var num = temp4
+            localStorage.setItem(num,text)
+            localStorage.setItem("num",num)
         } else {
             window.alert("没有内容")
         }
