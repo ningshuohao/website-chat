@@ -7,7 +7,8 @@
     <body>
         <h3 class="bt">网站聊天</h3>
         <b onclick="find()">加载</b>
-        <form>要说的话：<input type="text" id="text"></form><button type="button" onclick="save()">say!</button>
+        <form>要说的话：<input type="text" id="text"><button type="button" onclick="save()">say!</button></form>
+        <h4 id="output">
     </body>
 </html>
 <script>
@@ -20,8 +21,10 @@
         while (temp<num) {
             var temp2 = temp + 1;
             var temp3 = localStorage.getItem(temp2)
-            document.write(temp3);
             var temp = temp2;
+            setInterval(
+                function() {document.getElementById(output).innerHTML=temp3}
+            ,500)
         };
     };
     function save(){
